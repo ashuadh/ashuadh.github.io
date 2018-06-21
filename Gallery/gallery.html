@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+    <link href="w3(homebutton).css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style2.css" rel="stylesheet" type="text/css">
+    <link href="demo.css" rel="stylesheet" type="text/css">
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script src="modernizr.custom.46884.js"></script>
+    <script src="jquery.slicebox.min.js"></script>
+</head>
+<body>
+
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+            <a href="../Home/home.html" class="w3-bar-item w3-button"><b>Home</b></a>
+            <a href="../About/about.html" class="w3-bar-item w3-button"><b>About</b></a>
+            <a href="../Gallery/gallery.html" class="w3-bar-item w3-button"><b>Gallery</b></a>
+            <a href="../Playlist/index.html" class="w3-bar-item w3-button"><b>Mixtape</b></a>
+            <a href="#" class="w3-bar-item w3-button"><b>A little something</b></a>
+            <a href="../Timer/timer.html" class="w3-bar-item w3-button"><b>Timer</b></a>
+        </div>
+
+    <header class="firstpage" id="firstpage">
+
+    
+    <div class="heading">
+        <div id="mainheading">
+            <b>Gallery</b>
+        </div>
+    </div>
+
+    
+
+    
+    <div class="containerfluid">
+        <div class="wrapper">
+            <ul id="sb-slider" class="sb-slider col-md-offset-0.5">
+                <li>
+                    <img src="../images/DSCN6484.jpg">
+                    <div class="sb-description">
+                        <h3>Awesome slider</h3>        
+                    </div>
+                </li>
+
+                <li>
+                    <img src="../images/DSCN6506.jpg">
+                    <div class="sb-description">
+                        <h3>Awesome slider</h3>        
+                    </div>
+                </li>
+                    
+                <li>
+                        <img src="../images/DSCN6508.jpg">
+                        <div class="sb-description">
+                            <h3>Awesome slider</h3>        
+                        </div>
+                </li>
+
+                <li>
+                    <img src="../images/DSCN6513.jpg">
+                    <div class="sb-description">
+                       <h3>Awesome slider</h3>        
+                   </div>
+                </li>
+
+                <li>
+                    <img src="../images/DSCN6515.jpg">
+                    <div class="sb-description">
+                        <h3>Awesome slider</h3>        
+                    </div>
+                </li>
+
+                <li>
+                    <img src="../images/Beautiful-Red-Rose-Flower-Wallpaper-Gift-For-Her.jpg">
+                    <div class="sb-description">
+                        <h3>Awesome slider</h3>        
+                    </div>
+                </li>
+
+                <li>
+                    <img src="../images/Beautiful-Red-Rose-Flower-Wallpaper-Gift-For-Her.jpg">
+                    <div class="sb-description">
+                        <h3>Awesome slider</h3>        
+                    </div>
+                </li>
+
+            </ul>
+            
+            <div id="shadow" class="shadow"></div>
+            
+            <div id="nav-arrows" class="nav-arrows">
+                <a href="">Next</a>
+                <a href="">Previous</a>
+            </div>   
+        </div>
+    </div>
+
+    
+    
+   
+
+    </header>
+
+    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776; Navigation Menu</button>
+     
+    
+    
+
+    <script type="text/JavaScript">
+        $(function() {
+            var page= (function(){
+                var $navArrows=$('#nav-arrows').hide(),
+                $shadow = $('#shadow').hide(),
+                slicebox = $('#sb-slider').slicebox({
+                    onReady : function(){
+
+                        $navArrows.show();
+                        $shadow.show();
+
+                    },
+                    orientation: 'r',
+                    cuboidsRandom: true,
+                    disperseFactor: 30
+                }),
+
+                init= function(){
+                    initEvents();
+                },
+                initEvents=function(){
+                    $navArrows.children(':first').on('click',function(){
+                        slicebox.next();
+                        return false;
+
+                    });
+                    $navArrows.children(':last').on('click',function(){
+                        slicebox.previous();
+                        return false;
+                    });
+                };
+
+                return{init : init};
+
+            })();
+
+            page.init();
+            
+        });
+    </script>
+    <script>
+        function w3_open() {
+          document.getElementById("firstpage").style.marginLeft = "10%";
+          document.getElementById("firstpage").style.height = "100vh";
+          document.getElementById("mySidebar").style.width = "10%";
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+          document.getElementById("firstpage").style.marginLeft = "0%";
+          document.getElementById("firstpage").style.height = "93vh";
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>    
+    
+</body>
+</html>
