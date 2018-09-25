@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
 * {
     box-sizing: border-box;
   }
@@ -10,6 +12,16 @@ html,
     background: #333;
     overflow: hidden;
     
+  }
+
+
+  #ps {
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
   }
 
   .inner {

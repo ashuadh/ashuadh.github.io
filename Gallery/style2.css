@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Glass+Antiqua');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +8,11 @@
 
 
 .heading{
-    font-size: 30px;
+    font-size: 60px;
     width: 20%;
+    left: 10%;
+    color: white;
+    position: absolute;
 
 }
 
@@ -20,6 +24,13 @@
     
 }
 
+#openNav {
+    position: absolute;
+    bottom: 5%;
+    left:5%;
+    color: white !important;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -28,19 +39,27 @@ body{
 }
 
 .firstpage{
-    background: url('http://thepressoc.com/wp-content/uploads/2016/03/background_Gallery.png');
+    background: url('../images/design-heart-love-159038.jpg');
     background-size: cover;
     background-position: left; 
-    height: 91vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     -webkit-overflow-scrolling: touch;
-    
+    position: relative;
     transition:margin-left 0.5s;
-    width:100%;
+    width: 100%;
 }
 
-
+#ps {
+    position: absolute;
+    right: 5%;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    font-weight: bold; 
+    bottom: 2%;
+}
 
 .sb-slider{
     margin: 10px auto;
@@ -50,8 +69,8 @@ body{
     list-style: none;
     padding: 0;
     border: black 3px solid;
-    
-    
+    margin-left: 25%;
+    margin-top: 7%;
 }
 
 .sb-slider li{
@@ -164,14 +183,16 @@ body{
     border: 1px black solid;
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
     outline: none;
+    margin-left: 22%;
 }
 
 .nav-arrows a:first-child{
     left: auto;
-    right: 2px;
+    right: -22%;
     background-position: top right;
     background: url('../images/Arrow-forward-01.jpg');
     background-size: cover;
+    
 }
 
 .nav-arrows a:hover{
@@ -223,6 +244,7 @@ body{
     opacity: 0.7;
     display: inline-block;
     border-radius: 50%;
+
 }
 
 .nav-options span:first-child{

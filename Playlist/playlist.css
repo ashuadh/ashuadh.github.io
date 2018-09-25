@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    padding: 1% 20%;
+    font-family: "Monotype Corsiva";
+    margin: 0;
+    
+}
+
+#openNav {
+    margin: 0;
+    border-bottom: 1px solid 1px;
+}
+
+
+
+h1{
+    text-align: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-family: "Monotype Corsiva" !important;
+    
+}
+
+#list {
+    background-image: url('../images/Cassette.jpg');
+    background-size: cover;
+    height: 100vh; 
+    position: relative;
+    
+}
+
+#intro p {
+    text-align: center;
+    padding: 1% 20%;
+    font-family: "Monotype Corsiva" !important;
+    font-size: 18px;
+    
+}
+
+#intro {
+    background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/63/74/8958725ff716484.jpg');
+    background-repeat: repeat-x;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Monotype Corsiva";
+    background: white;
+    margin: 0;
+    padding-bottom: 1%;     
+}
+
+iframe{
+    position: relative;
+    margin: auto;
+    border: 1px solid black;
+}
+
+
+#container{
+    height: 60vh;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.w3-sidebar{
+    background: #f3f3f3;
+    height: 50%;
+}
+
+button {
+    outline: none !important;
+}
+
+#ps1 {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+}
+
+#ps{
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+    color:black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 26px;
+
+}
+
+td,th {
+    text-align: center;
+}
+
+#firstpage {
+    transition:margin-left 0.5s;
+    width: 100%; 
+}
+
+
+

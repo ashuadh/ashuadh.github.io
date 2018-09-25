@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Homestyling/w3(homebutton).css">
+    <link href="playlist.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <script>
+        jQuery('body').css('display','none');
+        jQuery('body').fadeIn(2000);
+    </script>
+    
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; height: 100%" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+        <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+        
+        <a href="../Gallery/gallery.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="../Playlist/try.html" class="w3-bar-item w3-button">Mixtape</a>
+        
+        <a href="../Timer/timer.html" class="w3-bar-item w3-button">Timer</a>
+    </div>
+
+    <header id="firstpage">
+        <section id="intro">
+            <br><br><br><br>
+            <h1>Mixtape</h1>
+        <div id="para1">
+            <p>
+                I love the idea of giving a playlist to a loved one. Can't do that the way it is supposed to be.
+                Just tried to put something together though. You know i love expressing through songs. So here goes.
+            </p>
+        </div>
+        </section>
+
+        <h3>Hope you like it!</h3>
+
+
+        <section id = container>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/?listType=playlist&list=PL3KJrfeFMlUVX5B5oxBTnMdNRhe8WaRpp" frameborder="0" allowfullscreen>&#160</iframe>
+        </section>
+
+        <section id="list">
+        <h2>LIST OF SONGS</h2>
+        <button id="english" class="w3-button w3-teal w3-xlarge" onclick="w3_open1()" style="width:50%; background-color: transparent; padding: 10px; margin: 0% 5%; z-index: -1 !important"> &#9776; English</button> 
+        <div class="w3-bar-block w3-card w3-animate-left" style="display:none; margin-left: 5%" id="list1">
+                <button style="background: rgba(0,0,0,0.2); text-align: center;" class="w3-bar-item w3-button w3-large" onclick="w3_close1()">Close &times;</button>
+                <table>
+                    <tr>
+                        <th>Song</th>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>Song</th>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>Song</th>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>Song</th>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>Song</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>One</td>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>This Town</td>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>La Vie En Rose</td>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>Fly me to the Moon</td>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>A Thousand Years</td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Say You Won't Let Go</td>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>The Belle Brigade</td>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>How Would You Feel</td>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>The One</td>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>You Are the Reason</td>
+                        
+                    </tr>
+                </table>
+            </div>
+        <button id="hindi" class="w3-button w3-teal w3-xlarge" onclick="w3_open2()" style="width:50%; background-color: transparent; margin: 0% 5%; padding: 10px;">&#9776;  Hindi</button>
+        <div class="w3-bar-block w3-card w3-animate-left" style="display:none; margin-left: 5%" id="list2">
+            <button style="background: rgba(0,0,0,0.2); text-align: center;" class="w3-bar-item w3-button w3-large" onclick="w3_close2()">Close &times;</button>
+            <table>
+                    <tr>
+                            <th>Song</th>
+                            
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <th>Song</th>
+                            
+                            <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>Song</th>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>Song</th>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>Song</th>
+                        
+                        </tr>
+                        <tr>
+                            <td>Nazm Nazm</td>
+                            
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <td>Humsafar</td>
+                            
+                            <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>Soch Na Sake</td>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>Kaun Tujhe</td>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>Enna Sona</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Itni Si Baat Hai</td>
+                            
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <th>&#160</th>
+                            <td>Hasi</td>
+                            
+                            <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>Tera Woh Pyaar</td>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>Agar Tum Mil Jao</td>
+                        
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <th>&#160</th>
+                        <td>Humdard</td>
+                        
+                        </tr>                
+                
+            </table>
+        </div>
+    <div id="ps1">
+        <p>Ps. Imagine the cassette on the right is what i gave you. :)</p>
+        <br>
+        <br>
+        <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()" style="width:20%; background-color: transparent; margin-left: 45%; margin-top: 1%;">&#9776; Click Me</button>
+    </div>
+        <div id = "ps">
+        <p>Ps. I love you.</p>
+    </div>
+    </div>
+
+    </section>
+
+
+    </header>
+    
+    <script>
+        function w3_open1() {
+          document.getElementById("list1").style.width = "50%";
+          document.getElementById("list1").style.display = "inline-block";
+          
+        }
+        function w3_close1() {
+          
+          document.getElementById("list1").style.display = "none";
+          document.getElementById("openNav").style.display = "inline-block";
+        }
+        function w3_open2() {
+          
+          document.getElementById("list2").style.width = "50%";
+          document.getElementById("list2").style.display = "inline-block";
+          
+        }
+        function w3_close2() {
+          
+          document.getElementById("list2").style.display = "none";
+          document.getElementById("openNav").style.display = "inline-block";
+        }        
+    </script>
+    <script>
+        function w3_open() {
+          document.getElementById("firstpage").style.marginLeft = "10%";
+          document.getElementById("mySidebar").style.width = "10%";
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+          document.getElementById("firstpage").style.marginLeft = "0%";
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>    
+
+</body>
+</html>
